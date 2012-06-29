@@ -4,3 +4,4 @@ build/
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 *.xcworkspace/xcuserdata/*
+automation_results/
