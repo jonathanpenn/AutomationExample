@@ -23,16 +23,16 @@
 		AB0092AC159D3BFC0091DC6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB0092AE159D3BFC0091DC6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB0092B0159D3BFC0091DC6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AB0092B4159D3BFC0091DC6B /* AutomationExample-Info.plist */ = {isa = PBXFileReference; path = "AutomationExample-Info.plist"; sourceTree = "<group>"; };
+		AB0092B4159D3BFC0091DC6B /* AutomationExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutomationExample-Info.plist"; sourceTree = "<group>"; };
 		AB0092B6159D3BFC0091DC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB0092B8159D3BFC0091DC6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB0092BA159D3BFC0091DC6B /* AutomationExample-Prefix.pch */ = {isa = PBXFileReference; path = "AutomationExample-Prefix.pch"; sourceTree = "<group>"; };
-		AB0092BB159D3BFC0091DC6B /* AUTAppDelegate.h */ = {isa = PBXFileReference; path = AUTAppDelegate.h; sourceTree = "<group>"; };
+		AB0092BA159D3BFC0091DC6B /* AutomationExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutomationExample-Prefix.pch"; sourceTree = "<group>"; };
+		AB0092BB159D3BFC0091DC6B /* AUTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUTAppDelegate.h; sourceTree = "<group>"; };
 		AB0092BC159D3BFC0091DC6B /* AUTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUTAppDelegate.m; sourceTree = "<group>"; };
 		AB0092BF159D3BFC0091DC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		AB0092C1159D3BFC0091DC6B /* AUTMasterViewController.h */ = {isa = PBXFileReference; path = AUTMasterViewController.h; sourceTree = "<group>"; };
+		AB0092C1159D3BFC0091DC6B /* AUTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUTMasterViewController.h; sourceTree = "<group>"; };
 		AB0092C2159D3BFC0091DC6B /* AUTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUTMasterViewController.m; sourceTree = "<group>"; };
-		AB0092C4159D3BFC0091DC6B /* AUTDetailViewController.h */ = {isa = PBXFileReference; path = AUTDetailViewController.h; sourceTree = "<group>"; };
+		AB0092C4159D3BFC0091DC6B /* AUTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUTDetailViewController.h; sourceTree = "<group>"; };
 		AB0092C5159D3BFC0091DC6B /* AUTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUTDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +131,7 @@
 			attributes = {
 				CLASSPREFIX = AUT;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Navel Labs";
+				ORGANIZATIONNAME = cocoamanifest.net;
 			};
 			buildConfigurationList = AB0092A2159D3BFC0091DC6B /* Build configuration list for PBXProject "AutomationExample" */;
 			compatibilityVersion = "Xcode 3.2";
