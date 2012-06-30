@@ -1,3 +1,5 @@
+// This is the Screen object "superclass" that has methods that other screen
+// objects can share.
 var Screen = function(properties) {
 
   for (key in properties) {
@@ -6,7 +8,6 @@ var Screen = function(properties) {
     }
   }
 
-  return this;
 };
 
 Screen.prototype = {
@@ -27,16 +28,15 @@ Screen.prototype = {
   }
 };
 
+// The specific screen objects that encapsulate the behavior that the user
+// does.
 ListScreen = new Screen({
-
   tapCellWithName: function(name) {
     return this.window().tableViews()[0].cells()[name].tap();
   }
-
 });
 
 DetailScreen = new Screen({
-
   displayedText: function() {
     return this.window().elements()[1].name();
   },
@@ -44,5 +44,4 @@ DetailScreen = new Screen({
   tapBackButton: function() {
     this.navBar().leftButton().tap();
   }
-
 });
