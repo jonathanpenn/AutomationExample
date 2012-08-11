@@ -1,3 +1,5 @@
+set -e
+
 echo "Make sure you are using Xcode 4.3.3"
 
 BUILD_DIR=/tmp/AutomationExample
@@ -16,8 +18,4 @@ mkdir -p automation_results
   -e UIARESULTSPATH automation_results \
   -e UIASCRIPT automation_script.js
 
-if [[ $? == 0 ]]; then
-  echo "Tests passed!"
-else
-  echo "Tests failed!"
-fi
+echo "Tests passed!"
