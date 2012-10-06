@@ -71,7 +71,7 @@ get_error_status() {
   ruby -e 'exit 1 if STDIN.read =~ /Instruments Usage Error|Instruments Trace Error|^\d+-\d+-\d+ \d+:\d+:\d+ [-+]\d+ (Fail:|Error:|None: Script threw an uncaught JavaScript error)/'
 }
 
-trap cleanup_instruments EXIT
+trap cleanup_instruments EXIT INT TERM
 function cleanup_instruments() {
   # Because we fork instruments in this script, we need to clean up if it's
   # still running because of an error or the user pressed Ctrl-C
