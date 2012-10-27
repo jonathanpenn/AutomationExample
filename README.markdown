@@ -5,10 +5,7 @@ command line.
 
 # Requirements
 
-You need to have at least Xcode 4.3, but know that UI Automation broke under
-Xcode 4.4 as it was released with 10.8 Mountain Lion. As of Xcode 4.5 DP4, UI
-Automation works great again, so you'll want to jump to that version if you
-don't want to use Xcode 4.3.
+You need to have at least Xcode 4.5 along with the command line tools.
 
 # Running The Demo
 
