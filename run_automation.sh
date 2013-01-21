@@ -28,7 +28,10 @@ BUILD_DIR=/tmp/AutomationExample
 mkdir -p $BUILD_DIR
 
 # Build our application and place the final bundle in our temporary directory
-xcodebuild -sdk iphonesimulator clean build CONFIGURATION_BUILD_DIR=$BUILD_DIR
+# Change the TARGETED_DEVICE_FAMILY to "2" to run it against the iPad
+xcodebuild -sdk iphonesimulator clean build \
+  CONFIGURATION_BUILD_DIR=$BUILD_DIR \
+  TARGETED_DEVICE_FAMILY=1
 
 # Clean out any existing automation results (we don't need to keep them for this demo)
 rm -rf automation_results
