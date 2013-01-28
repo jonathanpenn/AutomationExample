@@ -1,2 +1,2 @@
 language: objective-c
-script: run_automation.sh
+script: ./run_automation.sh
