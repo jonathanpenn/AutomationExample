@@ -38,7 +38,7 @@ ListScreen = new Screen({
 
 DetailScreen = new Screen({
   displayedText: function() {
-    return this.window().elements()[1].name();
+    return this.window().staticTexts()[0].name();
   },
 
   tapBackButton: function() {
