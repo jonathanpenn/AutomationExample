@@ -87,6 +87,13 @@ function cleanup_instruments() {
 if [[ $1 == "----test" ]]; then
   get_error_status
 else
-  run_instruments $@
-fi
+  # Change the field separator temporarily to properly handle arguments
+  # with spaces (like a device name)
+  SAVEIFS=$IFS
+  IFS=$(echo -en "\n\b")
 
+  run_instruments "$@"
+
+  # Restore old field separator
+  IFS=$SAVEIFS
+fi
